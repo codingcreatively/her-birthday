@@ -361,6 +361,15 @@
                 <div class="memory-image placeholder" style="">🦋</div>
                 <div class="memory-message">Butterflies every single time</div>
             </div>
+
+ <!-- Card 7 -->
+            <div class="memory-card">
+                <div class="tooltip">I love you more than myself 🥰</div>
+                <div class="memory-image placeholder" style="">🦋</div>
+                <div class="memory-message">I love you in every universe</div>
+            </div>
+
+            
            
         </div>
 
@@ -397,6 +406,12 @@
                     <div class="memory-image placeholder" style="">🦋</div>
                     <div class="memory-message">Butterflies every single time</div>
                 </div>
+<!-- Card 7 -->
+                <div class="memory-card" data-message="I love you more than myself 🥰">
+                    <div class="memory-image placeholder" style="">🦋</div>
+                    <div class="memory-message">I love you in every universe</div>
+                </div>
+
                 
             </div>
         </div>
@@ -512,7 +527,7 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
             const desktopImages = document.querySelectorAll('#desktopGallery .memory-image');
             const mobileImages = document.querySelectorAll('#mobileGallery .memory-image');
             
-            if (cardIndex >= 1 && cardIndex <= 6) {
+            if (cardIndex >= 1 && cardIndex <= 7) {
                 const index = cardIndex - 1;
                 
                 // Update desktop version
@@ -538,12 +553,14 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
                   addPhoto(4, 'pic4.jpg');
                      addPhoto(5, 'pic5.jpg');
                         addPhoto(6, 'pic6.jpg');
+        addPhoto(7, 'pic7.jpg');
         // addPhoto(2, 'path/to/your/second-photo.jpg');
         // etc.
     </script>
 </body>
 
 </html>
+
 
 
 
