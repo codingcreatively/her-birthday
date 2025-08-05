@@ -393,7 +393,26 @@
                 <div class="memory-message">I love you in every universe</div>
             </div>
 
-            
+            <!-- Card 8 -->
+<div class="memory-card">
+    <div class="tooltip">Every heartbeat felt like a song for you &#10084;</div>
+    <div class="memory-image placeholder">&#128149;</div>
+    <div class="memory-message">The moment I knew it was love</div>
+</div>
+
+            <!-- Card 9 -->
+<div class="memory-card">
+    <div class="tooltip">You walked in, and suddenly everything felt right &#128158;</div>
+    <div class="memory-image placeholder">&#128525;</div>
+    <div class="memory-message">The day you became my favorite feeling</div>
+</div>
+
+            <!-- Card 10 -->
+<div class="memory-card">
+    <div class="tooltip">You were a moment, then you became a memory I'll cherish forever &#128147;</div>
+    <div class="memory-image placeholder">&#128248;</div>
+    <div class="memory-message">The photo that holds a thousand feelings</div>
+</div>
            
         </div>
 
@@ -435,7 +454,21 @@
                     <div class="memory-image placeholder" style="">🦋</div>
                     <div class="memory-message">I love you in every universe</div>
                 </div>
-
+<!-- Card 8 -->
+<div class="memory-card" data-message="Every heartbeat felt like a song for you &#10084;">
+    <div class="memory-image placeholder">&#128149;</div>
+    <div class="memory-message">The moment I knew it was love</div>
+</div>
+            <!-- Card 9 -->
+<div class="memory-card" data-message="You walked in, and suddenly everything felt right &#128158;">
+    <div class="memory-image placeholder">&#128525;</div>
+    <div class="memory-message">The day you became my favorite feeling</div>
+</div>
+             <!-- Card 10 -->
+<div class="memory-card" data-message="You were a moment, then you became a memory I'll cherish forever &#128147;">
+    <div class="memory-image placeholder">&#128248;</div>
+    <div class="memory-message">The photo that holds a thousand feelings</div>
+</div>
                 
             </div>
         </div>
@@ -551,7 +584,7 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
             const desktopImages = document.querySelectorAll('#desktopGallery .memory-image');
             const mobileImages = document.querySelectorAll('#mobileGallery .memory-image');
             
-            if (cardIndex >= 1 && cardIndex <= 7) {
+            if (cardIndex >= 1 && cardIndex <= 10) {
                 const index = cardIndex - 1;
                 
                 // Update desktop version
@@ -578,12 +611,16 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
                      addPhoto(5, 'pic5.jpg');
                         addPhoto(6, 'pic6.jpg');
         addPhoto(7, 'pic7.jpg');
+        addPhoto(8, 'pic8.jpg');
+        addPhoto(9, 'pic9.jpg');
+        addPhoto(10, 'pic10.jpg');
         // addPhoto(2, 'path/to/your/second-photo.jpg');
         // etc.
     </script>
 </body>
 
 </html>
+
 
 
 
