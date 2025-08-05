@@ -24,7 +24,28 @@
             position: relative;
         }
 
+#tapHint {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(214, 51, 132, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  z-index: 9999;
+  animation: fadeOut 4s ease-in-out forwards;
+  pointer-events: none;
+}
 
+@keyframes fadeOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
 
 
 
@@ -203,6 +224,7 @@
     </style>
 </head>
 <body>
+    <div id="tapHint">&#127925; Tap anywhere to play music</div>
     <!-- Background floating emojis -->
     <div class="floating-emoji" style="top: 10%; left: 5%;">💖</div>
     <div class="floating-emoji" style="top: 20%; right: 10%;">💋</div>
@@ -330,6 +352,7 @@ document.body.addEventListener("touchstart", startMusic, { once: true });
 </body>
 
 </html>
+
 
 
 
